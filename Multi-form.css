@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jaro:opsz@6..72&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HR+Lijeva:wght@100..400&family=Yuji+Mai&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: radial-gradient(
+        circle, 
+        rgb(249, 87, 212) 0%,
+        rgb(16, 185, 242) 0%,
+        rgb(49, 85, 226) 100%
+    );
+  }
+  
+  :root{
+    --line-border-fill:hsl(0, 88%, 40%);
+    --line-border-empty: #383838;
+    --dark-color: #1c2833;
+    --light-gray-color: #ddd;
+    --white-color: #fff;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+  .container{
+    width: 450px;
+    height: 650px;
+    margin: 2rem auto;
+    overflow: hidden;
+    background-color: var(--white-color);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    position: relative;
+  }
+  .form-step {
+    display: none;
+  }
+
+  #form2{
+    left: 500px;
+  }
+
+  #form3{
+    left: 500px;
+  }
+
+  #form4{
+    left: 500px;
+  }
+
+  form button:active{
+    transform: scale(0.98);
+}
+
+form input{
+  padding: 10px 5px;
+  width: 100%;
+  margin: 5px 0;
+  border: 1px solid var(--light-gray-color);
+  font-family: inherit;
+  background: transparent;
+  border-radius: 5px;
+}
+
+form input:focus{
+  outline: none;
+  border: 1px solid var(--dark-color);
+}
+.btn_box{
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+form button{
+  width:110px ;
+  height:35px ;
+  background-color: rgb(126, 7, 46);
+  margin: 0 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: inherit;
+  border-radius:5px ;
+  color: var(--light-gray-color);
+}
+h1{
+  text-align: center;
+  color: rgb(248, 26, 26);
+  text-decoration: underline;
+}
+
+
+h2{
+    font-size: xx-large;
+    text-align: justify;
+    text-overflow: clip;
+    font-weight: bolder;
+    padding: 0%;
+    background-color: ;
+}
+
+h3{
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 0
+    font-size: 2rem;
+    color: var(--dark-color);
+
+}
+
+h4{
+    text-align: left;
+    color: rgb(3, 14, 7);
+    font-size: xx-large;
+    font-stretch: extra-expanded;
+}
+
+h5{
+    text-align: left;
+    color: rgb(3, 14, 7);
+    font-size: xx-large;
+    font-stretch: extra-expanded;
+} 
+  
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #b929ad;
+  }
+
+  .progress_container{
+    width: 350px;
+    display:flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    position: relative;
+}
+
+  .progress_container::before{
+    position:absolute;
+    content: ;
+    background-color: var(--light-gray-color);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: 1;
+}
+
+.progress{
+    background-color:red;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4.5px;
+    width: 100%;
+    z-index: 1;
+    transition: 0.4s ease-in;
+
+}
+
+.circle{
+    background-color: rgb(62, 193, 250);
+    height:30px;
+    width:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+
+.circle.active{
+    border-color: rgb(205, 205, 243);
+    color: var(--white-color);
+    background-color: rgb(113, 146, 236);
+}
+
+.container form{
+  top:100px ;
+  left: 20px;
+  position: absolute;
+  width: 400px;
+  font-family: inherit;
+  transition: 1.8s ease-in;
+}
+
+

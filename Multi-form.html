@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTISTEP-FORM</title>
+    <link rel="stylesheet" href="/Web-Dev Starter Lessons/stylesheet/Multi-form.css">
+    <script defer src="/Web-Dev Starter Lessons/Scripts/Script/Multi-Script.js"></script> 
+
+</head>
+<body>
+    <div class="container">
+        <h1>ENTRANCE FORM</h1><br>
+        <form id="form1">
+            <div>
+                <h2>Username</h2>  
+                <input type="text" id="Username" placeholder="Username" required>
+
+                <h3>Telephone No</h3>
+                <input type="number" id="PhoneNumber" placeholder="Phonenumber">
+                <h2>Zip Code</h2>
+                <input type="number" id="number" placeholder="number" required><br> 
+                <h2>Email Address</h2>
+                <input type="text" id="Email" placeholder="Email" required> 
+             
+                <div class="btn_box"></div>
+                <button id="next1" type="button">next</button><br><br><br>
+            </div> 
+
+        </form> 
+
+        <form id="form2">
+            <div>
+                <h2>Personal Info</h2>  
+                <input type="Name" placeholder="First Name" required>
+                <input type="Name" placeholder="Middle Name" required>
+                <input type="Name" placeholder="Last Name" required>
+                <br><br><br>
+            </div>
+            <div class="btn_box"></div>
+            <button id="back1" type="button">back</button>
+            <button id="next2" type="button">next</button> 
+        </form>
+    
+        <form id="form3">
+            <div>
+                <h4>Social Links</h4>
+                <input type="text" placeholder="Facebook" required>
+                <input type="text" placeholder="Twitter" required>
+                <input type="text" placeholder="LinkedIn" required>
+            </div>
+
+            <div class="btn_box"></div>
+            <button id="back2" type="button">back</button>
+            <button id="next3" type="button">next</button>
+        </form>
+
+    
+
+        <form id="form4">
+            <div>
+                <h5>Country</h5> 
+                <select id="country" name="country" required>
+                    <option value="Nigeria">Nigeria</option> 
+                    <option value="Canada">Canada</option>
+                    <option value="United kingdom">United kingdom</option>
+                    <option value="USA">USA</option>
+                    <option value="United Arab Emirates">United Arab Emirates</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Ecuador">Ecuador</option>
+                </select><br>
+            </div>
+
+            <div class="btn_box"></div>
+            <button id="back3" type="button">back</button>
+            <button id="next4" type="button">next</button>
+        
+
+         <div>
+         <label for="message">Any Other Comment:</label><br>
+         <textarea id="message" name="message"></textarea>
+         <button type="button">Comments</button>
+         </div><br>
+
+         <div>
+         <input type="checkbox" id="terms" name="terms" required>
+         <label for="terms">I agree to the terms and conditions</label><br><br>
+         </div><br>
+    
+         <div>
+         <div class="btn_box"></div>
+         <button id="back4" type="button">back</button>
+         <button id="submit" type="button">submit</button>
+         </div> 
+          <div class="progress_container">
+         <div class="progress" id="progress"></div>
+         <div class="circle active">1</div>
+         <div class="circle">2</div>
+         <div class="circle">3</div>
+         <div class="circle">4</div>
+         </div>
+         </form>
+    </div>   
+</body>
+</html>
